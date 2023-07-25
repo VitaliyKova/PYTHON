@@ -51,3 +51,19 @@
 #     pow += 1
 
 
+k = "Cпри"
+k1 = k.upper()
+en_char = {1: 'AEIOULNSTR', 2: 'DG', 3:'BCMP', 4: 'FHVWY', 5: 'K', 8: 'JX', 10: 'QZ'}
+ru_char = {1: 'АВЕИНОРСТ', 2: 'ДКЛМПУ', 3: 'БГЁЬЯ', 4: 'ЙЫ', 5: 'ЖЗХЦЧ', 8: 'ШЭЮ', 10: 'ФЩЪ'}
+sum = 0
+if k1[0] in "AEIOULNSTRDGBCMPFHVWYKJXQZ":
+    for i in k1:
+        for key,v in en_char.items():
+            if i in v:
+                sum += key
+else:
+    for i in k1:
+        for key,v in ru_char.items():
+            if i in v:
+                sum += key
+print(sum)
