@@ -27,16 +27,16 @@
 # 3 1 2 4
 
 
-list_1 = [14, 1, 2, 4]
-summa = []
-i = 0
-while i < len(list_1):
-    if i == 0:
-        summa.append(list_1[0] + list_1[1] + list_1[-1])
-    elif i == len(list_1) - 1:
-        summa.append(list_1[len(list_1) - 1] + list_1[len(list_1) - 2] + list_1[0])
-    else:
-        summa.append(list_1[i] + list_1[i - 1] + list_1[i + 1])
-    i += 1         
+# list_1 = [14, 1, 2, 4]
+# summa = []
+# i = 0
+# while i < len(list_1):
+#     if i == 0:
+#         summa.append(list_1[0] + list_1[1] + list_1[-1])
+#     elif i == len(list_1) - 1:
+#         summa.append(list_1[len(list_1) - 1] + list_1[len(list_1) - 2] + list_1[0])
+#     else:
+#         summa.append(list_1[i] + list_1[i - 1] + list_1[i + 1])
+#     i += 1         
 
-print(f" Максимальное кол-во ягод -> {max(summa)} при у становке на куст № {summa.index(max(summa))}")
+# print(f" Максимальное кол-во ягод -> {max(summa)} при у становке на куст № {summa.index(max(summa))}")
