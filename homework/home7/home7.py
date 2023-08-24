@@ -55,4 +55,4 @@
 #             print(f"{operation(i,j)}\t", end ='')
 #         print()    
 
-# print_operation_table(lambda x, y: x + y)           
+# print_operation_table(lambda x, y: x + y)
